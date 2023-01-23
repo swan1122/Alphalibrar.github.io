@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PPPP.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="memory">
+        <div class="card-deck">
+            <div class="card text-center" style="width: 18rem;">
+              <div class="card-front">
+                J
+              </div>
+              <div class="card-back">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+              <div class="card-front">
+                H
+              </div>
+              <div class="card-back">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          
+      
+      
+      <script>
+        const cards = document.querySelectorAll('.card'); // Select all cards
+      let hasFlippedCard = false; // Keep track of whether a card has been flipped
+      let lockBoard = false; // Lock board to prevent multiple cards from flipping at the same time
+      let firstCard, secondCard; // Keep track of the first and second flipped cards
+      
+      function flipCard() {
+        if (lockBoard) return; // If the board is locked, return
+        if (this === firstCard) return; // If the same card is clicked twice, return
+      
+        this.classList.add('flip'); // Flip the card by adding the 'flip' class
+      
+        if (!hasFlippedCard) {
+          // First card flip
+          hasFlippedCard = true;
+          firstCard = this;
+      
+          return;
+        }
+      
+        // Second card flip
+        secondCard = this;
+        checkForMatch();
+      }
+      
+      function checkForMatch() {
+        // Check if the flipped cards match
+        let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+      
+        isMatch ? disableCards() : unflipCards();
+      }
+      
+      function disableCards() {
+        // If cards match, disable them
+        firstCard.removeEventListener('click', flipCard);
+        secondCard.removeEventListener('click', flipCard);
+      
+        resetBoard();
+      }
+      
+      function unflipCards() {
+        // If cards don't match, unflip them
+        lockBoard = true;
+      
+        setTimeout(() => {
+          firstCard.classList.remove('flip');
+          secondCard.classList.remove('flip');
+      
+          resetBoard();
+        }, 1500);
+      }
+      
+      function resetBoard() {
+        // Reset the board for the next turn
+        [hasFlippedCard, lockBoard] = [false, false];
+        [firstCard, secondCard] = [null, null];
+      }
+      
+      (function shuffle() {
+        cards.forEach(card => {
+          let randomPos = Math.floor(Math.random() * 12);
+          card.style.order = randomPos;
+        });
+      })();
+      
+      cards.forEach(card => card.addEventListener('click', flipCard));
+      
+      const restartButton = document.getElementById('restart-button');
+      restartButton.addEventListener('click', restartGame);
+      
+      function restartGame() {
+        // reset game state variables here
+        
+        // remove any classes that were added to the cards
+        cards.forEach(card => {
+          card.classList.remove('flip');
+          card.classList.remove('match');
+          card.style.pointerEvents = "auto";
+        });
+       
+      }
+      
+      
+      </script>
+      
+      </section>
+</body>
+</html>

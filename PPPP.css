@@ -1,0 +1,53 @@
+.card-front, .card-back {
+    height: 100%;
+    transition: transform 1s;
+}  
+.card {
+    width: 150px; /* adjust width as desired */
+    height: 150px; /* adjust height as desired */
+    perspective: 1000px; /* create a 3D effect */
+    position: relative; /* set position to relative for 3D effect */
+  }
+  .card .front {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; /* add rounded corners */
+    background-color: #fff; /* add a background color */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* add a drop shadow */
+    transform-style: preserve-3d; /* preserve 3D effect */
+    transition: all 0.6s ease; /* add a transition effect */
+    position: absolute; /* set position to absolute for 3D effect */
+    top: 0;
+    left: 0;
+  }
+  .card .back {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; /* add rounded corners */
+    background-color: #4CAF50; /* add a background color */
+    transform: rotateY(180deg); /* rotate back face to show when card is flipped */
+    position: absolute; /* set position to absolute for 3D*/
+  }
+  .card:hover .front {
+    transform: rotateY(180deg); 
+    }
+    .card.flip .front {
+    transform: rotateY(180deg); 
+    animation: flip 0.8s; 
+    }
+    @keyframes flip {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(180deg); }
+    }
+    .card.match .front {
+    background-color: #4CAF50; 
+    pointer-events: none; 
+    }
+    .card.unmatch .front {
+    background-color: #f44336; 
+    }
+    
+    
+    
+    
+    

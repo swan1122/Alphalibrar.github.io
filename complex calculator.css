@@ -1,0 +1,245 @@
+body {
+    background-color: #f7f7f7;
+    font-family: 'Apple-System', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif';
+  }
+  .header {
+    background-color: #5AC8FA; 
+    text-align: center;
+    font-size: 2em; 
+    font-weight: bold; 
+    padding: 20px;
+    box-shadow: 0px 0px 10px #888888; 
+    }
+    
+    h1 {
+    color: rgb(0, 0, 0); 
+    }
+  .Calculator {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    background-color: #007AFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0066CC;
+  }
+  
+  #clear {
+    background-color: #BDBDBD;
+  }
+  
+  #clear:hover {
+    background-color: #9E9E9E;
+  }
+  /* General styles for the calculator */
+#calculator1 {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Styles for the calculator's buttons */
+  #calculator1 button {
+    background-color: #f99b05;
+    color: black;
+    border: none;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Add a hover effect to the buttons */
+  #calculator1 button:hover {
+    background-color: #c9c9c9;
+    cursor: pointer;
+  }
+  
+  /* Add a border to the display input */
+  #calculator1 #display {
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  .footer{
+    background-color: #bf00fe; 
+    color:black;
+    text-align: center;
+    font-size: 2em; 
+    font-weight: bold; 
+    padding: 20px;
+    box-shadow: 0px 0px 10px #888888; 
+  }
+  #game-container {
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #888;
+}
+
+#game-container h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+#message {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    animation: fadeInOut 2s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#guess-input {
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 5px #888;
+    text-align: center;
+}
+
+#submit-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 5px #888;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#submit-button:hover {
+    background-color: #555;
+}
+
+#game-board {
+  width: 300px;
+  margin: 0 auto;
+}
+.Gamess {
+  background-image: url('Games\ 2.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+}
+
+
+
+.row {
+  display: flex;
+}
+.Gamess h1 {
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Custom Font', sans-serif;
+  
+
+text-shadow: 2px 2px 5px #888;
+color: #fff;
+margin-top: 20px;
+}
+
+.square {
+width: 100px;
+height: 100px;
+border: 2px solid #333;
+text-align: center;
+font-size: 48px;
+line-height: 100px;
+font-weight: bold;
+color: rgb(33, 234, 227);
+transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+cursor: pointer;
+}
+
+.square:hover {
+background-color: #ddd;
+transform: rotate(5deg);
+}
+
+#reset-button {
+margin: 10px auto;
+padding: 10px 20px;
+background-color: #333;
+color: #fff;
+font-size: 18px;
+border-radius: 5px;
+border: none;
+box-shadow: 2px 2px 5px #888;
+cursor: pointer;
+transition: background-color 0.2s ease-in-out;
+}
+
+#reset-button:hover {
+background-color: #555;
+transform: scale(1.1);
+}
+
+
+/* Define general styles for the game container */
+.game-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+  margin: 50px auto;
+  perspective: 1000px;
+}
+/*--TIC Tac Toe--*/

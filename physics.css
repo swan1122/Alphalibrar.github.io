@@ -1,0 +1,100 @@
+
+/* Set the background color to a dark gray */
+.header {
+    background-image: url("Physics\ img.jpeg"); /* Add a physics-inspired background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the text box */
+.text-box {
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background color */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+}
+
+/* Style the h1 heading */
+h1 {
+    color: #fff;
+    font-size: 48px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Add a hover effect to the h1 heading */
+h1:hover {
+    color: #ffa600;
+}
+
+
+/* Set the background color to a dark gray */
+.kinematics {
+    background-color: #282c34;
+    color: #abb2bf;
+}
+
+/* Add a gradient background color to the tables */
+table {
+    background: linear-gradient(to right, #4b6cb7, #182848);
+}
+
+/* Add a hover effect to the table rows */
+table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Style the table headers */
+table th {
+    margin-left: px;
+    margin-right:  50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+}
+
+/* Style the table cells */
+table td {
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+}
+
+/* Add a background color to the table cells on hover */
+table td:hover {
+    background-color: #f5f5f5;
+    color: #282c34;
+}
+table th:hover{
+    background-color: #f5f5f5;
+    color: #282c34;
+}
+
+/* Add a border radius to the tables */
+table {
+    border-radius: 10px;
+}
+
+/* Add a physics-inspired font */
+h1 {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Add some padding to the container */
+.container {
+    padding: 50px;
+}

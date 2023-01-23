@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="C++.css" type="text/css">
+    <link rel="shortcut icon" href="Alpha.png" type="image/x-icon">
+    
+    <title>C++ and facts</title>
+</head>
+<body>
+<section class="header">
+    <h1> In this section, We will provide some data from C++ I hope you will find something effective.</h1>
+   
+  </section>
+  <section class="Content">
+    <div class="apple-list-container">
+    <ul class="apple-list">
+      <li>
+        <div class="apple-list-title">C++</div>
+        <div class="apple-list-content">
+          A general-purpose programming language developed by Bjarne Stroustrup in 1979 at Bell Labs. Originally developed as an extension of the C programming language, C++ is known for its efficiency, flexibility, and ability to work with a wide variety of hardware and software platforms.
+        </div>
+      </li>
+      <li>
+        <div class="apple-list-title">Industry Use</div>
+        <div class="apple-list-content">
+          C++ is used in a wide range of industries, including finance, telecommunications, and video game development. It is also used in the development of scientific and engineering software and in the development of operating systems and other critical software applications.
+        </div>
+      </li>
+      <li>
+        <div class="apple-list-title">Real-World Applications</div>
+        <ul class="apple-sub-list">
+          <li class="apple-sub-list-item">Operating systems: Many operating systems, such as Microsoft Windows and macOS, are written in C++.</li>
+          <li class="apple-sub-list-item">Browsers: The Chrome web browser is written in C++, as is Mozilla Firefox.</li>
+          <li class="apple-sub-list-item">Video games: C++ is a popular programming language for video game development.</li>
+          <li class="apple-sub-list-item">Financial software: C++ is often used in the development of financial software, such as trading platforms and risk management systems.</li>
+          <li class="apple-sub-list-item">Medical and engineering software: C++ is used in the development of software for medical devices and scientific simulations in fields such as engineering and physics.</li>
+          <li class="apple-sub-list-item">Graphics and multimedia software: C++ is used in the development of software for creating and editing graphics, audio, and video.</li>
+          <li class="apple-sub-list-item">Operating systems and servers: C++ is used to create operating systems and servers for computers and other devices.</li>
+          <li class="apple-sub-list-item">Databases: Some databases, such as MySQL and MongoDB, are written in C++.</li>
+          <li class="apple-sub-list-item">Internet of Things (IoT) devices: C++ is used to program IoT devices, such as smart home devices and wearable technology.</li>
+          <li class="apple-sub-list-item">Artificial intelligence and machine learning: C++ is used in the development of artificial intelligence and machine learning applications.</li>
+        </ul>
+      </li>
+      <li>
+      </div>  
+        <div class="apple-list-title">Syntax Elements</div>
+        <table class="apple-table">
+          <tr>
+            <th>Syntax Element</th>
+            <th>Fact</th>
+          </tr>
+          <tr>
+            <td>Variables</td>
+            <td>Variables are used to store values in C++. They must be declared with a specific data type (e.g. int, double, char) before they can be used.</td>
+          </tr>
+          <tr>
+          <td>Operators</td>
+          <td>C++ has various operators that can be used to perform operations on variables, such as assignment (=), arithmetic (+, -, *, /), and comparison (==, >, <).</td>
+          </tr>
+          <tr>
+          <td>Control structures</td>
+          <td>Control structures allow you to control the flow of your program's execution. Examples include if statements, for loops, and while loops.</td>
+          </tr>
+          <tr>
+          <td>Functions</td>
+          <td>Functions allow you to group code together and reuse it multiple times in your program. Functions can take parameters and return a value.</td>
+          </tr>
+          <tr>
+          <td>Arrays</td>
+          <td>Arrays are used to store a collection of values of the same data type. They are indexed from 0.</td>
+          </tr>
+          <tr>
+          <td>Pointers</td>
+          <td>Pointers are variables that store the memory address of another variable. They are often used to pass variables by reference to functions.</td>
+          </tr>
+          <tr>
+          <td>Classes and objects</td>
+          <td>Classes are used to define custom data types in C++. Objects are instances of a class, and can have their own properties and methods.</td>
+          </tr>
+          </table>
+          </li>
+          </ul>
+          
+      
+          </section>
+ 
+  <section class="Codes">
+  <div class="code1">
+    <pre><code >
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+int main()
+{
+    std::string name;
+    int age;
+
+    std::cout &lt;&lt; "What is your name? ";
+    std::cin >> name;
+
+    std::cout &lt;&lt; "What is your age? ";
+    std::cin >> age;
+
+    std::cout &lt;&lt; "Hello, " &lt;&lt; name &lt;&lt; "! You are " &lt;&lt; age &lt;&lt; " years old." &lt;&lt; std::endl;
+
+    return 0;
+}
+    </code></pre>
+    
+    <hr>
+
+    <h1 > C++ calculator using functions </h1>
+    <pre> <code> 
+      #include &lt;iostream&gt;
+
+        #include &lt;cmath&gt;
+        using namespace std;
+        
+        // Function prototypes
+        double squareRoot(double num);
+        void complexCalc();
+        
+        int main() {
+          double num1, num2;
+          char op;
+          
+          cout &lt;&lt; "Enter a number: ";
+          cin >> num1;
+          
+          cout &lt;&lt "Enter another number: ";
+          cin >> num2;
+          
+          cout &lt;&lt  "Enter an operator (+, -, *, /, s, c): ";
+          cin >> op;
+          
+          if (op == '+') {
+            cout &lt;&lt num1 + num2;
+          } else if (op == '-') {
+            cout &lt;&lt num1 - num2;
+          } else if (op == '*') {
+            cout &lt;&lt num1 * num2;
+          } else if (op == '/') {
+            cout &lt;&lt num1 / num2;
+          } else if (op == 's') {
+            cout &lt;&lt squareRoot(num1);
+          } else if (op == 'c') {
+            complexCalc();
+          } else {
+            cout &lt;&lt"Invalid operator";
+          }
+          
+          return 0;
+        }
+        
+        // Function definitions
+        double squareRoot(double num) {
+          return sqrt(num);
+        }
+        
+        void complexCalc() {
+          double real1, imag1, real2, imag2;
+          char op;
+          
+          cout &lt;&lt "Enter the real part of the first complex number: ";
+          cin >> real1;
+          
+          cout &lt;&lt "Enter the imaginary part of the first complex number: ";
+          cin >> imag1;
+          
+          cout&lt;&lt "Enter the real part of the second complex number: ";
+          cin >> real2;
+          
+          cout &lt;&lt "Enter the imaginary part of the second complex number: ";
+          cin >> imag2;
+          
+          cout &lt;&lt "Enter an operator (+, -, *, /): ";
+          cin >> op;
+          
+          if (op == '+') {
+            cout &lt;&lt real1 + real2 &lt;&lt " + " &lt;&lt imag1 + imag2 &lt;&lt "i";
+          } else if (op == '-') {
+            cout &lt;&lt real1 - real2 &lt;&lt " + " &lt;&lt imag1 - imag2 &lt;&lt "i";
+          } else if (op == '*') {
+            cout &lt;&lt real1 * real2 - imag1 * imag2 &lt;&lt " + " &lt;&lt real1 * imag2 + real2 * imag1 &lt;&lt "i";
+          } else if (op == '/') {
+            cout &lt;&lt (real1 * real2 + imag1 * imag2) / (real2 * real2 + imag2 * imag2) &lt;&lt " + " 
+            &lt;&lt (imag1 * real2 - real1 * imag2) / (real2 * real2 + imag2 * imag2) &lt;&lt "i";
+          } else {
+            cout &lt;&lt "Invalid operator";
+          }
+        }
+        
+    </code></pre>
+    <hr>
+
+    <h1> Codes for this task</h1>
+    <hr>
+    <h1>Write a program with an infinite for loop which displays only odd numbers, then breaks after 123 iteration</h1>
+    <hr>
+    <pre>
+      <code>
+      for (;;) {
+        // Display only odd numbers
+        if (i % 2 == 1) {
+          cout &lt;&lt i &lt;&lt endl;
+        }
+      
+        // Break after 123 iteration
+        if (i == 123) {
+          break;
+        }
+        i++;
+      }
+      </code>
+      </pre>
+    
+</div>
+</section>
+
+
+<section class="Code-2">
+
+  <h1> Modify the program so that:</h1>
+
+<table id="Tasks">
+    <tr>
+      <th>Tasks</th>
+
+     <tr>
+      <td>it will display numbers from 0 to 50, omitting the range<15.30>,</td> </tr>
+        <tr>
+         <td> the ending condition of the loop remained unchanged</td>
+        </tr>
+        <tr>
+          <td> the loop will be interrupted after 50 iterations</td>
+        </tr>
+  </table>
+  <pre>
+    <code>
+      #include <iostream>
+
+        int main(){
+            int width = 51;
+            for (int x = 0; x &lt; width; ++x ) {
+                if (x>=15 && x&lt;=30){
+                    continue;
+                } else if (x == 50){
+                    break;
+                }
+                std::cout &lt;&lt; x &lt;&lt;std::endl;
+            }
+        }
+        
+    </code>
+  </pre>
+
+<!-- COdes for program 2-->
+
+  <h1> Modify the program so that:</h1>
+
+<table id="Tasks">
+    <tr>
+      <th>Tasks</th>
+
+     <tr>
+      <td>How to interpret the result displayed by the instruction in line 8?</td> </tr>
+        <tr>
+         <td>Using the sizeof () operator, check the size ( in the matter of reserved memory) of created arrays (eg sizeof (tab)).</td>
+        </tr>
+        <tr>
+          <td> What determines the size (in the matter of reserved memory) of the particular array?
+          </td>
+        </tr>
+  </table>
+  <pre>
+    <code>
+      
+        #include <iostream>
+// for task No 2
+          int main() {
+              int tab_size = 7;
+          
+              int tab[tab_size] = {0,1,2,3,4,5};
+              std::cout  "Size of tab: "  &lt;&lt sizeof(tab)  &lt;&lt" bytes"  &lt;&lt std::endl;
+          
+              char tab1[tab_size] = "AGH EiT";
+              char tab2[tab_size] = {'A','G','H'};
+              std::cout  &lt;&lt "Size of tab1: "  &lt;&lt sizeof(tab1)  &lt;&lt " bytes" &lt;&ltstd::endl;
+              std::cout &lt;&lt "Size of tab2: " &lt;&ltsizeof(tab2)  &lt;&lt" bytes"  &lt;&lt std::endl;
+          
+          }
+          
+        
+    </code>
+  </pre>
+
+
+  <table id="Tasks" >
+    <tr>
+      <th>This Program will give the mean value of the numbers from user input</th>
+
+    </tr>
+     </table>
+  <pre>
+    <code>
+      
+      #include <iostream>
+        using namespace std;
+        
+        int main() {
+            int n, num;
+            double sum = 0.0, mean;
+        
+            cout &lt;&lt "Enter the number of elements: ";
+            cin >> n;
+            cout &lt;&lt"Enter " &lt;&lt n &lt;&lt" numbers: ";
+        
+            for (int i = 0; i &lt; n; i++) {
+                cin >> num;
+                sum += num;
+            }
+        
+            mean = sum / n;
+            cout &lt;&lt "Mean value is: " &lt;&ltmean &lt;&lt;endl;
+        
+            return 0;
+        }
+        
+        
+    </code>
+  </pre>
+
+
+
+  <table id="Tasks">
+    <tr>
+      <th>Guess Game</th>
+
+     <tr>
+      <td>This code act like a guess game .</td> </tr>
+        <tr>
+          <td> You have to pick a number from some range. </td>
+        </tr>
+        <tr>
+          <td> In this code, we have to use "cstdlib" and "ctime" libraries
+          </td>
+        </tr>
+  </table>
+  <pre>
+<code>
+  #include <iostream>
+    #include <cstdlib>
+    #include <ctime>
+    using namespace std;
+    
+    
+    int main(){
+    
+        srand(time(0));
+    
+        int SerectNum = rand()%100+1;
+        int guess;
+    
+        cout &lt;&lt " Pick a Number from the range of 1-100";
+        cin >> guess;
+    
+        if( guess== SerectNum){
+            cout &lt;&lt"Con!! You made the right guess ";
+    
+            return 0;
+        } else if( guess > SerectNum){
+            cout&lt;&lt "Your guess is too high!!/,/ Pick another time";
+            cin >> guess;
+        } else{
+            cout &lt;&lt" Your number is too Low!!/,/ Pick another time ";
+            cin>> guess;
+        }
+    
+    
+        cout&lt;&lt " Sorry1 You hit the maximum Attempt/./"&lt;&ltSerectNum &lt;&lt endl;
+        return 0;
+    }
+  </code>
+  </pre>
+</section>
+
+
+    <!-- Codes1 -->
+      
+     <section class="footer">
+      <h1> We will develop this page. Please wait the update </h1>
+     </section>
+</body>
+</html>

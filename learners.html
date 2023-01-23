@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Learnes.css" type="text/css" rel="stylesheet">
+    <title>Learner Type Test</title>
+</head>
+<body>
+    <header>
+        <h1>Assessment of Learning Styles</h1>
+        <p>This assessment is based on the theoretical construct of various learning styles, which posit that individuals have unique preferences in the ways they acquire, process, and retain new information. It is important to note that while some individuals may have a dominant learning style, it is not uncommon for individuals to exhibit a combination of learning styles, and that different techniques may be more effective for different individuals at different times.</p>
+      </header>
+
+      <section class="Learner">
+        <h1> Alpha test for Learner type</h1>
+        <h1> Based on some real learner type test</h1>
+        <div class="grid-container">
+          <div class="grid-item">
+            <p> Many students are unaware of their learning style. Understanding your learning style can be a powerful tool in improving your study habits and overall academic performance.<br><br> By identifying your strengths and weaknesses as a learner, you can tailor your study methods to better suit your needs, leading to increased understanding and retention of material.</p>
+          </div>
+          <div class="grid-item">
+            <p>It is important to note that not all learners fit neatly into one category, and you may find that you have a combination of learning styles.<br><br> However, by becoming aware of your dominant learning style, you can take steps to improve your study habits and achieve success in your academic pursuits.</p>
+          </div>
+        </div>
+      </section>
+      
+
+
+          <hr>
+            
+          <br>
+          <br>
+          <br>
+            
+          <section class="Box">
+          <form>
+            <label for="input"> Choose that is matched with you.!! We also proivde something for u<span>🤭</span></label>
+            <input type="text" id="input">
+            <button type="button" onclick="displayResult()">Submit</button>
+          </form>
+          <div id="result"></div>
+          <br>
+   <br>
+   <br>
+   <br>
+   
+          <script>
+            function displayResult() {
+          // Get the user's input
+          let userInput = document.getElementById("input").value;
+          
+          // Check the input value
+          if (userInput === "1") {
+            document.getElementById("result").innerHTML = document.getElementById("result").innerHTML = "<p>You're a visual learner</p>. <a href='https://en.wikipedia.org/wiki/Visual_learning' class='link'>Learn more</a>";
+          } else if (userInput === "2") {
+            document.getElementById("result").innerHTML = "<p>You're an auditory learner.</p><a href='https://en.wikipedia.org/wiki/Auditory_learning' class='link'>Learn more</a>";
+          } else if (userInput === "3") {
+            document.getElementById("result").innerHTML = "<p>You're Kinetsthetic learners</p>.<a href='https://en.wikipedia.org/wiki/Kinesthetic_learning' class='link'>Learn more</a>";
+          }
+         else if (userInput === "4") {
+            document.getElementById("result").innerHTML = "<p>You're Writin /reading Learners.</p><a href='https://en.wikipedia.org/w/index.php?search=Writing+%2Freading+Learner&title=Special:Search&profile=advanced&fulltext=1&ns0=1' class='link'>Learn more</a>";
+          }else if (userInput === "5") {
+            document.getElementById("result").innerHTML = "<p>You're Solitary Learner.</p><a href='https://en.wikipedia.org/w/index.php?fulltext=1&search=Solitary%20Learner&title=Special%3ASearch&ns0=1' class='link'>Learn more</a>";
+    ;}       else {
+          document.getElementById("result").innerHTML = "<p>Invaild input. You have to choose 1-5</p>";
+         }
+        }
+        
+          </script>
+            </section>
+   
+          <section class="Learner-col">
+            <h1> You Have to pick from this !!.</h1>
+
+            <table>
+                <tr>
+                  <th>Questions</th>
+                  <th>     </th>
+                </tr>
+                <tr>
+                    <td> 1</td>
+                  <td>
+                   Do you want to see a picture or visual aids in order to understand the topic? <br> 
+                    Do you prefer to take detailed notes and use highlighters to organize information? <br> 
+                    Do you find it difficult to understand information that is only presented verbally?
+                  </td>
+                </tr>
+                <tr>
+                    <td> 2</td>
+                  <td>
+                    2. Do you prefer to hear information in order to understand? <br> 
+                    Do you find mnemonic devices and repetition helpful for remembering information? <br> 
+                    Do you find it difficult to understand information presented through visual aids or writing?
+                  </td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                  <td>
+                    3. Do you prefer to touch, move, and physically engage with information to understand it? <br> 
+                    Do you find flashcards and hands-on models helpful for remembering information? <br> 
+                    Do you find it difficult to learn in sedentary environments?
+                  </td>
+                </tr>
+                <tr>
+
+                    <td> 4</td>
+                  <td>
+                    4. Do you prefer to read and write information in order to understand it? <br> 
+                    Do you find taking detailed notes and using flashcards helpful for remembering information? <br> 
+                    Do you find it difficult to understand information presented through verbal lectures or hands-on activities?
+                  </td>
+                </tr>
+                <tr>
+                    <td> 5</td>
+                  <td>
+                    5. Do you prefer to study alone and in quiet environments? <br> 
+                    Do you find group work and discussions distracting? <br> 
+                    Do you prefer to work independently and at your own pace? <br> 
+                    Do you find it difficult to work in group or collaborative learning environments?
+                  </td>
+                </tr>
+              </table>
+              
+           
+
+
+        </div>
+    </section>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    
+      
+     
+       <section class="footer">
+        <p>It is important to note that each person has unique combination of learning styles and that it's not uncommon for people to find different techniques useful at different times<br>
+            We believe this test will be helpful for u.<span>🤘🏼</span>.</p>
+
+       </section>
+</body>
+</html>

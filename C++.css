@@ -1,0 +1,268 @@
+/*CSS file*/
+
+/* Use a dark background color */
+body {
+  background-color: #2d2d2d;
+  color: #fff;
+}
+/* Header styles */
+.header {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+.header h1{
+  color: black;
+}
+
+.apple-list-container {
+  width: 80%;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #c8c8c8;
+  margin: 20px auto;
+  padding: 20px;
+}
+.apple-list-container:hover {
+  box-shadow: 0px 0px 10px #c8c8c8;
+}
+
+/* List Styles */
+.apple-list {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Adding class for the title of the list*/
+.apple-list-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+
+    text-shadow: 1px 1px #c8c8c8;
+    color:  black;
+  
+  
+}
+.apple-list {
+  font-family: "Georgia", serif;
+}
+
+/* Adding class for the content of the list*/
+.apple-list-content {
+  border: 1px solid #c8c8c8;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: black;
+}
+.apple-list-content:hover {
+  background-color: #f8f8f8;
+}
+
+
+/* Adding class for the sub-list*/
+.apple-sub-list {
+  font-size: 14px;
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+
+/* Adding class for the item of the sub-list*/
+.apple-sub-list-item {
+  margin-bottom: 8px;
+  color: black;
+}
+
+/* Table Styles */
+/* Adding class for the table*/
+.apple-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 16px;
+  border: 1px solid #c8c8c8;
+}
+
+/* Adding class for the table head and table data*/
+.apple-table th, .apple-table td {
+  border: 1px solid #c8c8c8;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Adding class for the table head*/
+.apple-table th {
+  background-color: #f8f8f8;
+  font-weight: 600;
+  color: #6c6c6c;
+}
+
+/* Adding class for the table data*/
+.apple-table td {
+  color: #6c6c6c;
+}
+.apple-table tr:hover {
+  background-color: #f8f8f8;
+}
+.apple-table td:hover {
+  background-color: #f8f8f8;
+}
+.apple-table th:hover {
+  background-color: #f8f8f8;
+}
+
+
+
+/* Keyframe animation */
+@keyframes example {
+  from {background-color: #f8f8f8;}
+  to {background-color: #fff;}
+}
+
+/* Apply animation to header on hover */
+.header:hover {
+  animation-name: example;
+  animation-duration: 0.5s;
+}
+
+/* Link styles */
+a {
+  color: #0000ff; /* blue */
+}
+
+/* Headings styles */
+h1 {
+  color: #333;
+}
+/* Table styles */
+.table {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+/* Table heading */
+.table h1 {
+  color: #ffa500; /* orange */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Table cells */
+.table td, .table th {
+  border: 1px solid #ffa500; /* orange */
+  padding: 10px;
+}
+
+/* Table header cells */
+.table th {
+  background-color: #333;
+  color: #ffa500; /* orange */
+  text-align: left;
+}
+
+/* Table rows */
+.table tr:nth-child(even) {
+  background-color: #444;
+}
+
+
+/* Give the header a different background color */
+header {
+  background-color: #0077C8;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Use a monospace font for the code */
+pre, code {
+  font-family: "Source Code Pro", monospace;
+}
+
+/* Give the code blocks a dark background color */
+pre {
+  width: 80%;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  border:  cyan solid 4px;
+  position: relative;
+}
+
+/* Give the code text a different color */
+code {
+  color: #fe0342;
+  background-color: transparent;
+  padding: 2px 4px;
+}
+
+/* Center the h1 text */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+ h2{
+  color: wheat;
+ }
+/* Use flexbox to display the code blocks side-by-side */
+.Codes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Give each code block equal width */
+.code1, .code2 {
+  flex: 1;
+  margin-right: 20px;
+}
+#Tasks {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+/* Table heading */
+#Tasks h1 {
+  color: #ffa500; /* orange */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Table cells */
+#Tasks td, #tasks th {
+  border: 1px solid #ffa500; /* orange */
+  padding: 10px;
+}
+
+/* Table header cells */
+#Tasks th {
+  background-color: #333;
+  color: #ffa500; /* orange */
+  text-align: left;
+}
+
+/* Table rows */
+#Tasks tr:nth-child(even) {
+  background-color: #444;
+}
+hr{
+   border: violet 2px ;
+}
+
+.footer{
+  background-color: rgb(69, 171, 161);
+
+}
+.footer h1{
+  color: #e43662;
+  font-size: xx-large;
+  font-weight: 700;
+}

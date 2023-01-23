@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="log in.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <input type="button" value="Login" onclick="checkCredentials()">
+      </form>
+
+<script>
+
+function checkCredentials() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+ 
+  
+  if (username === "Alpha1" && password === "10000" ||
+    username === "HASSAN" && password === "HASSAN" ||
+    username === "SWAN" && password === "SWAN") {
+    alert("Login successful!");
+    
+    var link = document.createElement("a");
+    link.href = "CSS 2.html";
+    link.innerHTML = "Enjoy";
+    link.classList.add("big-white-link");
+    document.body.appendChild(link);
+  } else {
+    alert("Invalid credentials. Please try again.");
+  }
+
+}
+
+</script>      
+</body>
+</html>

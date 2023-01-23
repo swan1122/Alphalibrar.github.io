@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="complex calculator.css" type="text/css">
+    <link rel="shortcut icon" href="Alpha.png" type="image/x-icon">
+    <title> Games</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Some Learning Support and Games </h1>
+    </div>
+    
+    <div class="header1">
+
+        <h1>Complex Calculator</h1>
+        
+      </div>
+      
+    <div class=" Calculator ">
+        <form>
+        
+            <h1> Complex Number Calculator for AC Circuit</h1>
+        <input type="text" id="real1" size="10"> + 
+        <input type="text" id="imag1" size="10"> i 
+        <br>
+        <input type="text" id="real2" size="10"> + 
+        <input type="text" id="imag2" size="10"> i 
+        <br>
+        <button type="button" onclick="calculate()">+</button> 
+        <button type="button" onclick="divide()">%</button>
+        <button type="button" onclick="multiply()">*</button>
+        <br>
+       
+        <input type="text" id="resultReal" size="10"> + 
+        <input type="text" id="resultImag" size="10"> i
+        </form>
+        
+        <br><br><br><br><br>
+        
+        
+        <!-- FUNCTION FOR CALCULATOR -->
+        <script>
+        function calculate() {
+          var real1 = document.getElementById("real1").value;
+          var imag1 = document.getElementById("imag1").value;
+          var real2 = document.getElementById("real2").value;
+          var imag2 = document.getElementById("imag2").value;
+        
+          var resultReal = parseFloat(real1) + parseFloat(real2);
+          var resultImag = parseFloat(imag1) + parseFloat(imag2);
+        
+          document.getElementById("resultReal").value = resultReal;
+          document.getElementById("resultImag").value = resultImag;
+        }
+        
+        function divide() {
+          var real1 = document.getElementById("real1").value;
+          var imag1 = document.getElementById("imag1").value;
+          var real2 = document.getElementById("real2").value;
+          var imag2 = document.getElementById("imag2").value;
+        
+          var denominator = real2 * real2 + imag2 * imag2;
+          var resultReal = (real1 * real2 + imag1 * imag2) / denominator;
+          var resultImag = (imag1 * real2 - real1 * imag2) / denominator;
+        
+          document.getElementById("resultReal").value = resultReal;
+          document.getElementById("resultImag").value = resultImag;
+        }
+        
+        function multiply() {
+          var real1 = document.getElementById("real1").value;
+          var imag1 = document.getElementById("imag1").value;
+          var real2 = document.getElementById("real2").value;
+          var imag2 = document.getElementById("imag2").value;
+        
+          
+        
+          document.getElementById("resultReal").value = resultReal;
+          document.getElementById("resultImag").value = resultImag;
+        
+        
+        
+        document.getElementById("resultReal").value = resultReal;
+        document.getElementById("resultImag").value = resultImag;
+        }
+        
+        
+        var Fraction = require('fractions.js');
+
+
+        </script>
+        
+        <hr>
+   <!-- Functiion for guess game -->
+        <section class="guess">
+          <div id="game-container">
+            <h1>Guess the Number Game</h1>
+            <h1>Range(1-100)</h1>
+            <p id="message"></p>
+            <input type="text" id="guess-input" placeholder="Enter your guess here">
+            <button id="submit-button">Submit</button>
+          </div>
+     
+          <script>
+            // generate a random number between 1 and 100
+            var secretNumber = Math.floor(Math.random() * 100) + 1;
+var guessInput = document.getElementById("guess-input");
+var submitButton = document.getElementById("submit-button");
+var message = document.getElementById("message");
+
+// variable to keep track of the number of attempts
+var attempts = 0;
+
+submitButton.addEventListener("click", function(){
+  // get the guess from the input field
+  var guess = parseInt(guessInput.value);
+  // check if the guess is correct
+  if (guess === secretNumber) {
+    message.textContent = "Congratulations! You guessed the number!";
+  } else if (guess < secretNumber) {
+    message.textContent = "Too low! Try again.";
+    attempts++;
+  } else {
+    message.textContent = "Too high! Try again.";
+    attempts++;
+  }
+
+  // check if the maximum number of attempts has been reached
+  if (attempts >= 10) {
+    message.textContent = "Game over! The correct number was " + secretNumber + ". Try again!";
+    attempts = 0;
+    secretNumber = Math.floor(Math.random() * 100) + 1;
+  }
+});
+
+
+          </script>
+        </section>
+        
+
+      <!-- TIC TAC TOE GAME-->
+      <section class="Gamess">
+        <<table class="game-container">
+          <tr>
+            <td class="square"></td>
+            <td class="square"></td>
+            <td class="square"></td>
+          </tr>
+          <tr>
+            <td class="square"></td>
+            <td class="square"></td>
+            <td class="square"></td>
+          </tr>
+          <tr>
+            <td class="square"></td>
+            <td class="square"></td>
+            <td class="square"></td>
+          </tr>
+        </table>
+        
+      
+      
+        
+        
+        
+        <button id="reset-button">Reset</button>
+        
+ <!-- Function for Tic- Tat- Toe Game -->
+<script>
+
+var squares = document.getElementsByClassName("square");
+var currentPlayer = "X";
+
+for (var i = 0; i < squares.length; i++) {
+    squares[i].addEventListener("click", function(event) {
+        if (event.target.textContent === "") {
+            event.target.textContent = currentPlayer;
+            checkForWinner();
+            currentPlayer = (currentPlayer === "X") ? "O" : "X";
+        }
+    });
+}
+
+function checkForWinner() {
+    // check rows
+    for (var i = 0; i < 9; i += 3) {
+        if (squares[i].textContent === squares[i + 1].textContent && squares[i].textContent === squares[i + 2].textContent && squares[i].textContent !== "") {
+            alert(squares[i].textContent + " wins!");
+            reset();
+        }
+    }
+    // check columns
+    for (var i = 0; i < 3; i++) {
+        if (squares[i].textContent === squares[i + 3].textContent && squares[i].textContent === squares[i + 6].textContent && squares[i].textContent !== "") {
+            alert(squares[i].textContent + " wins!");
+            reset();
+        }
+    }
+    // check diagonals
+    if (squares[0].textContent === squares[4].textContent && squares[0].textContent === squares[8].textContent && squares[0].textContent !== "") {
+        alert(squares[0].textContent + " wins!");
+        reset();
+    }
+    if (squares[2].textContent === squares[4].textContent && squares[2].textContent === squares[6].textContent && squares[2].textContent !== "") {
+        alert(squares[2].textContent + " wins!");
+        reset();
+    }
+}
+
+var resetButton = document.getElementById("reset-button");
+
+resetButton.addEventListener("click", function() {
+    reset();
+});
+
+function reset() {
+    for (var i = 0; i < squares.length; i++) {
+        squares[i].textContent = "";
+    }
+    currentPlayer = "X";
+    checkForTie();
+}
+
+function checkForTie() {
+    var tie = true;
+    for (var i = 0; i < squares.length; i++) {
+        if (squares[i].textContent === "") {
+            tie = false;
+            break;
+        }
+    }
+    if (tie) {
+        alert("Tie game!");
+        reset();
+    }
+}
+
+</script>
+</section>
+<!-- Function for Flashcards-->
+
+
+
+<!-- Footer section-->
+             <section class="footer">
+                <p> Alpha juniors, your academic success is our top priority. We are here to support you every step of the way. </p>
+             </section>
+
+
+             
+</body>
+</html>

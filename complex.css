@@ -1,0 +1,54 @@
+.Calculator {
+    padding: 20px; /* add padding */
+    background-color: #f2f2f2; /* add background color */
+    border-radius: 8px; /* add rounded corners */
+    width: 50%; /* adjust width as desired */
+    margin: 0 auto; /* center container horizontally */
+}
+.guess {
+    padding: 20px; /* add padding */
+    background-color: #f2f2f2; /* add background color */
+    border-radius: 8px; /* add rounded corners */
+    width: 50%; /* adjust width as desired */
+    margin: 0 auto; /* center container horizontally */
+}
+input[type="text"] {
+    font-size: 18px; /* increase font size */
+    padding: 10px; /* add padding */
+    border-radius: 8px; /* add rounded corners */
+    border: none; /* remove border */
+    margin-bottom: 20px; /* add margin */
+    width: 100%; /* adjust width */
+}
+
+button[type="button"] {
+    font-size: 18px; /* increase font size */
+    padding: 10px 20px; /* add padding */
+    border-radius: 8px; /* add rounded corners */
+    background-color: #4CAF50; /* add background color */
+    color: #fff; /* add text color */
+    cursor: pointer; /* change cursor to pointer */
+    transition: background-color 0.3s ease; /* add a transition effect */
+    margin-bottom:0;
+}
+h1 {
+    font-size: 24px; /* increase font size */
+    color: #333; /* change text color */
+    text-align: center; /* center text */
+}
+#message {
+    font-size: 18px; /* increase font size */
+    color: #333; /* change text color */
+    text-align: center; /* center text */
+}
+#submit-button {
+    background-color: #4CAF50; /* add background color */
+    color: #fff; /* add text color */
+    border-radius: 8px; /* add rounded corners */
+    font-size: 18px; /* increase font size */
+    cursor: pointer; /* change cursor to pointer */
+    transition: background-color 0.3s ease; /* add a transition effect */
+}
+#submit-button:hover {
+    background-color: #3E8E41; /* change background color on hover */
+}

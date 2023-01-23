@@ -1,0 +1,334 @@
+/* Overall webpage styles */
+body {
+  background-color: #0b1640;
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif';
+}
+
+/* Header styles */
+.header {
+  background-color: #6a1e70;
+  font-family: 'San Francisco', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #73f0c0;
+  color: rgb(0, 255, 13);
+}
+
+/* Herobtn styles */
+/* Herobtn styles */
+.herobtn {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #888888;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/* Herobtn p styles */
+.herobtn p {
+  font-size: x-large;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #007AFF;
+  text-align: center;
+}
+
+.herobtn1 li:hover {
+  background-color: #98939b;
+}
+
+
+/* Fancy-list styles */
+.fancy-list {
+  background-color: white;
+  list-style-type: none;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #888888;
+}
+
+.fancy-list li {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.fancy-list li:hover {
+  background-color: #c25df1;
+}
+
+.fancy-list li::before {
+  content: "✔ ";
+}
+h1{
+  color: #F7F7F7;
+}
+/* Search section styles */
+.Search {
+  background-image: linear-gradient(rgba(107, 212, 233, 0),rgba(115, 240, 249, 0)),url('B11.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #888888;
+}
+#result{
+  background-color: rgb(37, 173, 246);
+   color: #090808;
+   font-size: xx-large;
+   font-weight: 500;
+   border-radius: 50%;
+}
+#result a{
+  color: red;
+}
+
+/* listS styles */
+.listS {
+  background-color: rgb(33, 57, 104);
+  list-style-type: none;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #888888;
+}
+
+.listS h1 {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+ background-color: rgb(66, 118, 13);
+}
+.listS h1:hover{
+  background-color: #f500d4;
+  color: rgb(38, 41, 76);
+}
+
+
+/* Search center-form styles */
+.Search.center-form {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #888888;
+}
+
+/* Form and button styles */
+form {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+form button {
+    background-color: #007AFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #888888;
+}
+
+form button:hover {
+    background-color: #0060FF;
+}
+
+form input {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px #888888;
+}
+/* Footer container styles */
+.footer-container {
+  background-color: #007AFF;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Footer left and right styles */
+.footer-left, .footer-right {
+  width: 45%;
+}
+
+/* Footer heading styles */
+.footer h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Footer list styles */
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer list item styles */
+.footer li {
+  margin-bottom: 10px;
+}
+
+/* Footer link styles */
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Footer copyright styles */
+.footer-copyright {
+  background-color: #007AFF;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Footer copyright text styles */
+.footer-copyright p {
+    font-size: 0.8em;
+    margin: 0;
+    font-size: xx-large;
+}
+
+  .spinner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 44px;
+    height: 44px;
+    animation: spinner-y0fdc1 2s infinite ease;
+    transform-style: preserve-3d;
+  }
+  
+ .spinner > div {
+  background-color: rgba(0,77,255,0.2);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2px solid #fbf4fb;
+ }
+ 
+ .spinner div:nth-of-type(1) {
+  transform: translateZ(-22px) rotateY(180deg);
+ }
+ 
+ .spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+ }
+ 
+ .spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+ }
+ 
+ .spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+ }
+ 
+ .spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+ }
+ 
+ .spinner div:nth-of-type(6) {
+  transform: translateZ(22px);
+ }
+ 
+ @keyframes spinner-y0fdc1 {
+  0% {
+   transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+ 
+  50% {
+   transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+ 
+  100% {
+   transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+ }
+/* Hide the default checkbox */
+
+.grid-container {
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+  grid-gap: 20px; /* Gap between the cards */
+}
+
+
+/* FlipCards */
+.flip-card {
+  background-color: transparent;
+  width: 190px;
+  height: 254px;
+  perspective: 1000px;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid #391bff;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background: linear-gradient(120deg, rgb(46, 215, 199) 60%, rgb(9, 255, 243) 88%,
+     rgb(195, 0, 255) 40%, rgba(205, 80, 255, 0.603) 48%);
+  color: rgb(255, 255, 255);
+}
+
+.flip-card-back {
+  background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+     bisque 40%, rgb(255, 185, 160) 78%);
+  color: white;
+  transform: rotateY(180deg);
+}

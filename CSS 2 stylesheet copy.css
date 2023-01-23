@@ -1,0 +1,146 @@
+*{
+    margin: auto;
+    padding: 10px;
+
+  background-image: url('for\ data.jpeg');
+}
+
+h1{
+    text-align: center;
+    font-size: larger;
+    color: white;
+}
+
+p {
+    text-align: justify;
+    font-size: 25px;
+    color: white;
+    
+}
+
+.herobtn li tr{
+
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    border: 10px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.herobtn li:hover{
+    border:  10px solid cyan;
+    background: rgb(196, 127, 30);
+    transition:  1s;
+}
+
+.fancy-list {
+    background-color: #fff;;
+    list-style: none; /* remove the default bullet points */
+    font-size: 1.5em; /* increase the font size */
+    color: black; /* change the text color */
+    border-radius: 30%;
+  }
+
+  
+  .fancy-list li {
+    background-color: blueviolet;
+    margin: 10px 0; /* add some space between list items */
+    transition: all 0.3s ease-in-out; /* add a transition effect */
+    border-radius: 29%;
+  }
+  
+  .fancy-list li:hover {
+    transform: scale(1.1); /* scale up the list item on hover */
+    background-color: lightgray; /* change the background color on hover */
+  }
+  .Search h1{
+    text-align: center;
+    font-size: 45px;
+    color: black;
+
+  }
+  
+  .listS ul{
+
+    color: #fff;
+    display: block;
+  }
+
+  .listS li{
+    background-color: black;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 30%;
+
+  }
+
+  .listS li:hover{
+    transform: scale(1.1);
+    background-color: bisque;
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+
+    
+    
+  }
+  
+  input[type="search"] {
+    width: 50%;
+    height: 40px;
+    font-size: 20px;
+    padding: 0 10px;
+    border: 2px solid #ccc;
+    border-radius: 30%;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    width: 20%;
+    height: 40px;
+    font-size: 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  #results {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #results li {
+    width: 25%;
+    text-align: center;
+    margin: 10px;
+    color: #fff;
+  }
+  
+  #results li a {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    margin: 10px 0;
+  }
+  
+  #results li a:hover {
+    color: #d65f15;
+  }
